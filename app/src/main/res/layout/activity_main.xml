@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/My_Container_A"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="180dp"
+        android:background="#cbbcf6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Investment A"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/My_Container_B"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:background="#cbbcf6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Investment B"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+    </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/My_Container_C"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#421b9b"
+        android:layout_below="@+id/main">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Investment:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF" />
+
+    </FrameLayout>
+
+</RelativeLayout>
